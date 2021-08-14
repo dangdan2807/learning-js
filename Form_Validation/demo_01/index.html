@@ -16,6 +16,11 @@
             <p class="desc">Learn JS together</p>
 
             <div class="spacer"></div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="Example: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
 
             <div class="form-group">
                 <label for="fullName" class="form-label">Full Name</label>
@@ -24,8 +29,53 @@
             </div>
 
             <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" type="text" placeholder="Example: email@domain.com" class="form-control">
+                <label for="gender" class="form-label">Gender</label>
+                <div class="horizontal">
+                    <label for="gender-male">
+                        <input id="gender-male" name="gender" value="male" type="radio" class="form-control">
+                        <span>Male</span>
+                    </label>
+                    <label for="gender-female">
+                        <input id="gender-female" name="gender" value="female" type="radio" class="form-control">
+                        <span>Female</span>
+                    </label>
+                    <label for="gender-other">
+                        <input id="gender-other" name="gender" value="other" type="radio" class="form-control">
+                        <span>Other</span>
+                    </label>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="target" class="form-label">Target</label>
+                <div class="vertical">
+                    <label for="target-1">
+                        <input id="target-1" name="target" value="know" type="checkbox" class="form-control">
+                        <span>Know how to program</span>
+                    </label>
+                    <label for="target-2">
+                        <input id="target-2" name="target" value="small project" type="checkbox" class="form-control">
+                        <span>do a small project</span>
+                    </label>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="province" class="form-label">Province/City</label>
+                <select name="province" id="province" class="form-control">
+                    <option value="">Select province/city</option>
+                    <option value="hanoi">Ha Noi</option>
+                    <option value="danang">Da Nang</option>
+                    <option value="hochiminh">Ho CHi Minh</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar" class="form-label">Avatar</label>
+                <input id="avatar" name="avatar" type="file" class="form-control">
                 <span class="form-message"></span>
             </div>
 
